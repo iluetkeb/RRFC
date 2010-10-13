@@ -1,0 +1,192 @@
+Summary
+=======
+
+Fundamentally, the RFC process (actually called The Internet Standards
+Process) is a process for producing standards, not just documentation.
+The process is currently described in RFC 2026
+(http://tools.ietf.org/html/rfc2026). RFCs make up only one part of this
+process.
+
+We are not yet organised enough to judge standards. I have focused only
+on the Internet Draft and RFC stages in creating equivalent processes
+for the Robot Request For Comment processes.
+
+Below is a summary of the three main concepts in the Internet Standards
+Process. Following that is a description of my arguments for a similar
+process for robotics, called the Robot Request For Comment process
+(RRFC), and reasoning for decisions I made in creating the relevant
+documents.
+
+
+Internet Draft
+==============
+
+Essentially RFC works-in-progress. Relying on them as a reference is
+considered inappropriate. They valid for a maximum of six months, and
+can be deleted or replaced. Anyone can submit an Internet Draft.
+
+A tool, IDnits, can be used to check a document conforms to the RFC
+requirements before it is submitted.
+(http://tools.ietf.org/tools/idnits/)
+
+
+Request for Comments (RFC)
+==========================
+
+Memorandums by the IETF describing technologies, methods, etc. They may
+progress to an Internet standard, but this is not necessary.
+
+RFCs are *not* recognised documents, standards, specifications, or any
+other type of formal document. They are there for informational purposes
+in order to encourage the sharing of technology ideas, leading to
+greater cooperation and interoperation.
+
+RFCs are static; modified RFCs are submitted again and given a new
+number. Superseded RFCs are marked as "deprecated" or "obsolete." This
+record preservation ensures a continuous history is available.
+
+RFCs are typically published to inform others or obtain peer review of a
+new technology or idea. They tend to be experience-driven and published
+*after* technology development, not before.
+
+A common set of terms used in RFCs is defined in RFC 2119. Augmented BNF
+is used for syntax specifications (RFC 5234). Simple, fixed-width text
+formatting is used. The process is defined in RFC 2026 (summarised
+below). Author instructions are given in RFC 2223. They may be published
+in other formats, but the plain-text version is considered the
+definitive version.
+
+RFCs are officially available through the RFC Editor
+(http://www.rfc-editor.org/rfc.html), as well as other sites.
+
+The term "RFC" is not unique to the IETF RFC series; others also use it.
+It is, however, broadly associated with the IETF RFCs, making its reuse
+confusing.
+
+The official RFC process is currently at revision 3, specified in RFC
+2026. It is officially known as "The Internet Standards Process."
+
+Each RFC has a status. It is one of Informational, Experimental, Best
+Current Practice, Standards Track and Historic.
+
+ Informational: Virtually any kind of RFC providing information of any
+ level. For example, April Fools Day jokes and the DNS system are both
+ informational RFCs.
+
+ Experimental: Describe experimental ideas, such as a new protocol idea
+ that requires more work before it can be submitted to the standards
+ track.
+
+ Best Current Practice: RFCs that go beyond informational to be
+ considered rules, but do not affect over the wire data. The RFC
+ describing the RFC process could be described as BCP, as could an RFC
+ recommending how another RFC should be used.
+
+ Standards Track: See "Internet Standards."
+
+ Historic: A deprecated or obsoleted RFC.
+
+
+Internet Standards
+==================
+
+Formalised RFC. Goes through proposed and draft stages before becoming a
+standard, with each stage being posted as its own RFC.
+
+Proposed standard
+-----------------
+
+An RFC that has received significant review by the community and has
+stabilised. It should have a high level of community interest. RFCs that
+have little interest are unlikely to become proposed standards.
+
+Draft Standard
+--------------
+
+A proposed standard with two independent, interoperable implementations
+from separate code bases can become a draft standard. Changes to the
+specification are unlikely.
+
+Standard
+--------
+
+A specification that has obtained considerable experience in
+implementation and use. These are generally very technically mature and
+the community as a whole agrees that it provides a significant benefit.
+
+
+Robot Request For Comment (RRFC) Process
+========================================
+
+I do not believe that we are at a level where we can judge what should
+be come endorsed standards. For this reason, I have chosen to excise
+anything related to standards and the Standards Track from the IETF
+documents when creating the RETF documents. It is my belief that, after
+gaining some experience with this RRFC process, one of two things will
+happen. Either we will reach the point where we have the necessary
+knowledge, experience and people to form a body capable of judging
+standards. At this point, I expect a revised version of RRFC 1 to be
+produced that provides for a standardisation process. I also expect that
+this process will closely follow the IETF process, which has been
+created based on decades of experience.  Alternatively, we will decide
+that we do not and will not have the experience, or time, to judge
+standards, or that we do not want to be the gatekeepers of standards,
+and so will instead put forward RRFCs to existing standards bodies such
+as the IEEE, ISO or OMG as potential standards.
+
+We may need to implement a Python PEP-style voting process for BCPs in
+lieu of having a formally elected board or working groups that can meet.
+I am personally in favour of such an approach. The vote can be run by
+the Vote Managers with a set time limit for commenting and voting, as
+decided by the Vote Managers based on their view of the time necessary
+for all interested parties. The Vote Managers shall be a group of people
+who's responsibility is solely setting the time limit for the vote,
+announcing the vote, tallying the votes at the end, and requesting that
+the RRFC Editor publish RRFCs that pass voting. This contrasts with the
+IETF method of having the Internet Engineering Steering Group review
+potential RFCs and deciding. I prefer the vote method as I feel it is
+more inclusive of the community. To this end, I have modified the RFC
+guidelines to reflect this.
+
+So far, I've kept the IETF requirement for RFCs being in plain text.
+Their reason for this is historical, coming from the days of printing
+things on daisy-wheel printers. If there is an agreement, we could
+consider switching to an HTML format instead, which would in particular
+facilitate diagrams. We could even go all the way and supply XML
+templates, like Gentoo does for its community-generated documentation
+(this is my favoured alternative if we do not insist on ASCII). See also
+RFC 2629. I am *not* in favour of using a wiki, as we need to guarantee
+that RRFCs are static. If we choose a markup-based format, we should
+still have requirements on the formatting of the source. For example, a
+maximum line width to faciliate diffs. On this point, the RFC process
+allows a Postscript version as the secondary version, submitted
+alongside the ASCII primary version. I have changed this to HTML in the
+RRFC guidelines. I'm also keen on replacing ASCII with UTF-8.
+
+Are security considerations important for us yet? I've left in the
+requirement for a section discussing them, for now. RFC 3552 describes
+the IETF security considerations guidelines.
+
+What should we do about copyright? The RFC process requires a copyright
+section assigning copyright to The Internet Society.
+
+We may be able to skip RRFC 1 (which leans more towards a
+standardisation process) for now and focus only on RRFC 2. We could
+bring back RRFC 1 when we have more experience and feel we can tackle
+more formal standardisation issues.
+
+Overall, I believe that an RRFC process would become an invaluable
+outlet for community-wide documentation. This is something we are sorely
+lacking in robotics.
+
+Things that have occurred to me as potentially good topics for RRFCs:
+
+- Robotics Ontology (see test RRFC 4)
+- Pose data representation (see test RRFC 5)
+- Coordination state machine structures
+- Package format for ROS
+- Log file format (including such things as space for non-vital
+  system-specific meta-data), which would reference other RRFCs for
+  specific data formats, such as RRFC 4
+- Richard Vaughan's up-coming Avon protocol for simulators.
+
