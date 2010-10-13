@@ -1,0 +1,122 @@
+Robot Engineering Task Force                                    G. Biggs
+Request for Comments: 4                                             AIST
+Category: General                                           October 2010
+
+
+                        Pose data representation
+
+Status of this Memo
+
+   This memo provides information for the Robotics community describing
+   a common technology or concept.  This memo does not specify a
+   robotics standard of any kind.  Distribution of this memo is
+   unlimited.
+
+Abstract
+
+   This RRFC describes a data layout for storing pose data of a
+   two-dimensional planar robot. This data layout is useful for
+   operation between software components within a framework, for
+   inter-operation between frameworks, and for preserving data in log
+   files.
+
+Copyright Notice
+
+   Copyright (C) Someone (2010).  All Rights Reserved.
+
+Table of Contents
+   1.  Introduction . . . . . . . . .
+   2.  Data structure . . . . . . . .
+     2.1  Wire format . . . . . . . .
+     2.2  Log format  . . . . . . . .
+   3.  Security Considerations  . . .
+   4.  References . . . . . . . . . .
+   5.  Authors' Addresses   . . . . .
+   6.  Full Copyright Statement . . .
+
+1.  Introduction
+
+   The purpose of this RRFC is to define the storage of pose data for a
+   2D planar robot. It does not enumerate how that data should be
+   accessed by software at the framework- or library-user level.
+   Instead, it aims to define a structure of the data itself usable in
+   intra- and inter-operation, and in preserving data to log files.
+
+   Two formats are specified. One is for use by in-memory data
+   structures in transferring data between software components. The
+   other is for use by log files.
+
+
+2.  Data structure
+
+2.1  Wire format
+
+   struct Pose2D
+   {
+       float x
+       float y
+       float a
+   }
+
+   where:
+
+   - x is the position of the robot along the X axis, in metres.
+   - y is the position of the robot along the Y axis, in metres.
+   - a is the rotation of the robot around the Y axis, in radians, with
+   	 positive values indicating a counter-clockwise rotation.
+
+   All values are in a left-handed coordinate system.
+
+   "float" is defined as an IEEE floating-point value.
+
+2.2  Log format
+
+   This format is serialised in binary form to a log file.
+
+   serialised ::= "pose2d" x y a
+   x ::= float
+   y ::= float
+   a ::= float
+   float ::= IEEE floating-point value
+
+   where:
+
+   - x is the position of the robot along the X axis, in metres.
+   - y is the position of the robot along the Y axis, in metres.
+   - a is the rotation of the robot around the Y axis, in radians, with
+   	 positive values indicating a counter-clockwise rotation.
+
+   All values are in a left-handed coordinate system.
+
+   "float" is defined as an IEEE floating-point value.
+
+   Each value is serialised in little-endian format. No padding is used
+   between or around the values.
+
+
+3. Security Considerations
+
+   Security issues are not discussed in this memo.
+
+
+4. References
+
+
+5. Authors' Addresses
+
+   Geoffrey Biggs
+   Intelligent Systems Research Institute
+   Central 2, 1-1-1, Umezono
+   Tsukuba
+   Ibaraki 305-8568
+   Japan
+
+   Phone: +81 29-861-5984
+   Fax:   +81 29-861-5987
+   EMail: geoffrey.biggs@aist.go.jp
+
+6.  Full Copyright Statement
+
+   Me.
+
+

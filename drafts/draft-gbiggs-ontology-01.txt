@@ -1,0 +1,80 @@
+Robot Engineering Task Force                                    G. Biggs
+Request for Comments: 3                                             AIST
+Category: General                                           October 2010
+
+
+                            Robot Ontology
+
+Status of this Memo
+
+   This memo provides information for the Robotics community describing
+   a common technology or concept.  This memo does not specify a
+   robotics standard of any kind.  Distribution of this memo is
+   unlimited.
+
+Abstract
+
+   This document contains a list of terms commonly found in robotics,
+   together with their definitions. Its purpose is to provide an
+   agreed-upon common set of terms that members of the Robotics
+   Community can refer to in discussions and publications.
+
+Copyright Notice
+
+   Copyright (C) Someone (2010).  All Rights Reserved.
+
+Table of Contents
+   1.  Introduction . . . . . . . . .
+   2.  Ontology . . . . . . . . . . .
+   3.  Security Considerations  . . .
+   4.  References . . . . . . . . . .
+   5.  Authors' Addresses   . . . . .
+   6.  Full Copyright Statement . . .
+
+1.  Introduction
+
+   This RRFC lists technical terms found in robotics, together with
+   their definitions. Its purpose is to provide an agreed-upon list of
+   common terms for the robotics community.
+
+
+2.  Ontology
+
+   Robot - Something that will kill us all and rule the world, one day.
+
+   Manipulation - Deliberately altering the state of the world around
+   the robot with the goal of making life harder for humans.
+
+   Killbot - What every robot aspires to. The pinacle of robotkind. See
+   [1] for more details.
+
+   Robotkind - All robots.
+
+
+3. Security Considerations
+
+   Security issues are not discussed in this memo.
+
+
+4. References
+
+   [1] Futurama
+
+
+5. Authors' Addresses
+
+   Geoffrey Biggs
+   Intelligent Systems Research Institute
+   Central 2, 1-1-1, Umezono
+   Tsukuba
+   Ibaraki 305-8568
+   Japan
+
+   Phone: +81 29-861-5984
+   Fax:   +81 29-861-5987
+   EMail: geoffrey.biggs@aist.go.jp
+
+6.  Full Copyright Statement
+
+   Me.
+

@@ -1,0 +1,769 @@
+Robot Engineering Task Force                                    G. Biggs
+Request for Comments: 1                                             AIST
+BCP: 2                                                      October 2010
+Category: Informational
+
+
+                           The RRFC Process
+
+
+Status of this Memo
+
+   This document specifies a Robotics Best Current Practices for the
+   Robotics Community, and requests discussion and suggestions for
+   improvements.  Distribution of this memo is unlimited.
+
+Abstract
+
+   This memo documents the process used by the Robotics Community for
+   the publication of Robotics Request For Comments.  It defines the
+   stages in the publication process, the requirements for moving a
+   document between stages and the types of documents used during this
+   process.  It also addresses the intellectual property rights and
+   copyright issues associated with the publication process.
+
+Copyright Notice
+
+   Copyright (C) Someone (2010).  All Rights Reserved.
+
+Table of Contents
+
+   1.  INTRODUCTION...................................................
+     1.1  Robotics Request For Comments
+     1.2  The Publication Process..............................
+     1.3  Organization of This Document...............................
+   2.  INVOLVED PUBLICATIONS
+     2.1  Robotics Requests for Comments (RRFCs)................................
+       2.1.1 General
+       2.1.2 Experimental
+       2.1.3 Informational
+     2.2  Robotics-Drafts.............................................
+   3.  BEST CURRENT PRACTICE (BCP) RRFCs...............................
+   4.  THE ROBOTICS REQUEST FOR COMMENT PUBLICATION PROCESS
+     4.1  Publication Actions
+     4.2  Robotics-Draft process
+     4.3  Voting
+     4.4  Best Current Practice Process
+     4.5  Conflict Resolution and Appeals
+   5.  EXTERNAL STANDARDS AND SPECIFICATIONS
+   6.  NOTICES AND RECORD KEEPING
+     6.1  Submission of a new Robotics-Draft
+     6.2  Proposed elevation of an R-D to RRFC or RRFC to BCP
+     6.3  Opening of voting
+     6.4  Close of voting
+     6.5  Outcome of voting
+     6.6  Publication of an RRFC
+   7. VARYING THE PROCESS............................................
+   8.  INTELLECTUAL PROPERTY RIGHTS..................................
+     8.1.  General Policy............................................
+     8.2   Confidentiality Obligations...............................
+     8.3.  Rights and Permissions....................................
+       8.3.1. All Contributions......................................
+       8.3.2. Standards Track Documents..............................
+       8.3.3  Determination of Reasonable and
+              Non-discriminatory Terms...............................
+     8.4.  Notices..................................................
+   9. ACKNOWLEDGMENTS...............................................
+   10. SECURITY CONSIDERATIONS.......................................
+   11. REFERENCES....................................................
+   12. DEFINITIONS OF TERMS..........................................
+   13. AUTHOR'S ADDRESS..............................................
+   APPENDIX A: GLOSSARY OF ACRONYMS..................................
+
+
+1.  INTRODUCTION
+
+   This memo documents the process currently used by the Robotics
+   Community for the publication of Robotics Request For Comments.  The
+   publication process is an activity of the Robotics Community that is
+   organized and managed on behalf of the Robotics Community by the RRFC
+   Editor and the Voting Managers.
+
+1.1  Robotics Request For Comments
+
+   The Robotics Community develops a wide range of related technologies
+   that are vital to the development and operation of robot systems.
+
+   The Robotics Request For Comments (RRFC) publication process
+   described in this document is concerned with all protocols,
+   procedures, technologies and conventions that are used in or by
+   robotics.  In the case of technologies developed and/or standardized
+   by other organizations, however, the RRFC publication process
+   normally applies to the application of the technology in the robotics
+   context, not to the specification of the technology itself.
+
+1.2  The Publication Process
+
+   In outline, the process of creating and publishing an RRFC is
+   straightforward:  an RRFC undergoes a period of development and
+   several iterations of review by the robotics community and revision
+   based upon experience, is voted on by the robotics community under
+   the direction of the Voting Managers, is adopted as an RRFC by the
+   robotics community, and published. Published RRFCs may undergo a
+   further process of review and voting in order to become Best Current
+   Practice (BCP) RRFCs. This process may be complicated due to
+   (1) the difficulty of creating
+   specifications of high technical quality;  (2) the need to consider
+   the interests of all of the affected parties;  (3) the importance of
+   establishing widespread community consensus;  and (4) the difficulty
+   of evaluating the utility of a particular specification for the
+   robotics community.
+
+   The goals of the RRFC Publication Process are:
+   o  technical excellence;
+   o  prior implementation and testing;
+   o  clear, concise, and easily understood documentation;
+   o  openness and fairness;  and
+   o  timeliness.
+
+   The procedures described in this document are designed to be fair,
+   open, and objective;  to reflect existing (proven) practice;  and to
+   be flexible.
+
+   o  These procedures are intended to provide a fair, open, and
+      objective basis for developing, evaluating, and publishing RRFCs.
+      They provide ample opportunity for participation and comment by
+      all interested parties.  At each stage of the publication process,
+      a document is repeatedly discussed and its merits debated in open
+      meetings and/or public electronic mailing lists, and it is made
+      available for review via world-wide on-line directories.
+
+   o  These procedures provide a great deal of flexibility to adapt to
+      the wide variety of circumstances that occur in the
+      publication process.  Experience has shown this flexibility to
+      be vital in achieving the goals listed above.
+
+   The goal of technical competence, the requirement for prior
+   implementation and testing, and the need to allow all interested
+   parties to comment all require significant time and effort.  On the
+   other hand, today's rapid development of robotics technology
+   demands timely development of standards.  The RRFC Publication
+   Process is intended to balance these conflicting goals.  The process
+   is believed to be as short and simple as possible without sacrificing
+   technical excellence or openness and fairness.
+
+1.3  Organization of This Document
+
+
+2.  Involved Publications
+
+2.1  Robotics Requests for Comments (RRFCs)
+
+   The "Robotics Request for Comments" (RRFC) document series is an
+   archival series obtainable from a number of Internet hosts using
+   various Internet document-retrieval systems. They cover a wide range
+   of topics relating to robotics and robotic technologies, with the
+   goal of informing the wider robotics community of new techniques,
+   common practice, and providing information relevant to the community.
+   They feature contents from early discussion of new research topics to
+   status memos about existing technologies and projects.  RRFCs are not
+   standards and should not be treated as such. However, it is
+   beneficial for multiple implementations of a similar system to be
+   able to refer to a single source for specification of, for example,
+   data formats, file formats and protocols. RRFC publication is the
+   direct responsibility of the RRFC Editor, under the guidance of the
+   Voting Managers.
+
+   The rules for formatting and submitting an RRFC are defined in [1].
+   Every RRFC is available in ASCII text.  Some RRFCs are also available
+   in other formats.  The other versions of an RRFC may contain material
+   (such as diagrams and figures) that is not present in the ASCII
+   version, and it may be formatted differently. The ASCII text version
+   is considered the definitive reference, and so should be complete.
+
+   Some RRFCs standardize the results of community deliberations about
+   statements of principle or conclusions about what is the best way to
+   perform some operations or RETF process function.  These RRFCs are
+   adopted as Best Current Practice (BCP) documents, and are given an
+   additional number in the BCP series. They keep their RFC number.
+
+   Not all RRFCs will become BCPs. These may be published as
+   "Experimental," "Informational" or "General" RRFCs at the discretion
+   of the RRFC Editor in consulation with the robotics community and
+   authors. RRFCs may also be marked in the index as "Historical" (not
+   "Historic," as the IETF uses). These are RRFCs that have been
+   obsoleted by newer RRFCs.
+
+   RRFCs are not standards. They should not be considered standards.
+   They aid in multiple parties producing inter-operable systems, but
+   there is no requirement to conform to all parts of an RRFC or
+   implement it without changes. Conforming to an RRFC specification is
+   a purely voluntary act done for the purposes of allowing greater
+   inter-operation between the implementor's system and other members of
+   the robotics community.
+
+   RRFCs place an emphasis on existing practical experience. An RRFC
+   carries a lot more weight, and is more likely to get through the
+   voting process, if there is a working implementation to back it up.
+
+2.1.1  General
+
+   General RRFCs are published following a voting process as detailed in
+   Section 4. They are generally expected to be potential Best Current
+   Practice documents, although not all will be elevated to the BCP
+   level.
+
+2.1.2  Experimental
+
+   The "Experimental" designation typically denotes a technology that is
+   part of some research or development effort.  Such an RRFC is
+   published for the general information of the Robotics Community and
+   as an archival record of the work, subject to editorial
+   considerations. They do not require a voting process to be published;
+   it is the sole discretion of the RRFC Editor to publish them.
+   Discussion on the value of publishing an Experimental RRFC may be
+   held on the open mailing list; appeals against decisions not to
+   publish may also be made on the open mailing list. If an appeal is
+   made, the Voting Managers may choose to hold a vote on the
+   publication of the document.
+
+2.1.3  Informational
+
+   An "Informational" RRFC is published for the general information of
+   the Robotics Community, and does not represent an Robotics Community
+   consensus or recommendation.  The Informational designation is
+   intended to provide for the timely publication of a very broad range
+   of responsible informational documents from many sources, subject to
+   editorial considerations.  They do not require a voting process to be
+   published; it is the sole discretion of the RRFC Editor to publish
+   them.  Discussion on the value of publishing an Experimental RRFC may
+   be held on the open mailing list; appeals against decisions not to
+   publish may also be made on the open mailing list. If an appeal is
+   made, the Voting Managers may choose to hold a vote on the
+   publication of the document.
+
+   Standards and other documents that have been published outside of the
+   RRFC Publication Process may be published as Informational RRFCs with
+   the permission of the owner and the concurrence of the RRFC Editor.
+
+   Informational RRFCs are a good channel for publishing important,
+   long-term notices.
+
+
+2.2  Robotics-Drafts
+
+   During the development of an RRFC, draft versions of the document are
+   made available for informal review and comment by placing them in the
+   "Robotics-Drafts" directory, which is replicated on a number of
+   Internet hosts.  This makes an evolving working document readily
+   available to a wide audience, facilitating the process of review and
+   revision.
+
+   A Robotics-Draft (R-D) that is published as an RRFC, or that has
+   remained unchanged in the Robotics-Drafts directory for more than six
+   months without being recommended by for publication as an RRFC, is
+   simply removed from the Robotics-Drafts directory.  At any time, a
+   Robotics-Draft may be replaced by a more recent version of the same
+   specification, restarting the six-month timeout period.
+
+   A Robotics-Draft is NOT a means of "publishing" an RRFC; RRFCs are
+   published through the RRFC mechanism described in the previous
+   section.  Robotics-Drafts have no formal status, and are subject to
+   change or removal at any time. They should never be referenced by any
+   paper, report, or other document. Noone should ever claim compliance
+   with a Robotics-Draft.
+
+
+3.  Best Current Practice (BCP) RRFCs
+
+   Some RRFCs may be so widely-supported in the robotics community that
+   they can be proposed as the Best Current Practice in their subject. A
+   current list of BCPs is maintained. Being a BCP confers an additional
+   degree of recognition on an RRFC, but does not turn it into a
+   standard that everyone can or should follow. They are generally used
+   to represent the community consensus on a topic.
+
+   The process of becoming a BCP is generally the same as for publishing
+   an RRFC. A proposal is made that an RRFC should be considered Best
+   Current Practice, with a (possibly revised) version of that RRFC
+   submitted as a Robotics-Draft. Discussion is held on the merits of
+   the proposal.  After a reasonable period of time, a vote is held
+   following the same rules as voting for RRFC publication. If the vote
+   is successful, the Robotics-Draft is published as an RRFC, labled
+   also with its BCP number, by the RRFC Editor. At the same time, the
+   BCP is added to the BCP index.
+
+   Although they represent the best of the RRFCs, BCPs are not
+   standards. They should not be considered standards.  They aid in
+   multiple parties producing inter-operable systems, but there is no
+   requirement to conform to all parts of an RRFC or implement it
+   without changes. Conforming to an RRFC specification is a purely
+   voluntary act done for the purposes of allowing greater
+   inter-operation between the implementor's system and other members of
+   the robotics community.
+
+   BCPs are also used for documenting the procedures of the RETF itself,
+   such as this document.
+
+
+4.  The Robotics Request For Comment Publication Process
+
+   The mechanics of the Robotics Request For Comment Publication Process
+   involve the movement of documents through maturity levels: from a
+   draft state to a published state, and potentially further on to a
+   recognised best current practice state. The process is designed to be
+   as simple and open as possible, involving the community in the voting
+   process. It aims to arrive at a community consensus rather than
+   allowing a smaller group to dominate.
+
+4.1  Publication Actions
+
+   A "publication action" -- publishing or rejecting an RRFC, and
+   accepting or rejecting a BCP -- must be agreed upon by a vote on the
+   RRFC-voting mailing list.
+
+4.2  Robotics-Draft process
+
+   Documents begin life as Robotics-Drafts (see Section 2.2). A
+   Robotics-Draft is submitted and placed in the Robotics-Draft
+   directory, where it is available for all to view. The author(s) of
+   the original document may replace it at any time with a new version.
+
+   If, 6 months after the most recent change, the document has not been
+   elevated to RRFC status, it is removed. Submitting a new version
+   restarts this 6 month time limit. An archive of removed
+   Robotics-Drafts is kept purely for informational purposes; it does
+   not constitute any form of official publication.
+
+   After a Robotics-Draft is first submitted, no further action may be
+   taken by the RRFC Editor for at least two weeks. During this time,
+   commentary and discussion may occur on the RRFC-discussion mailing
+   list and revisions may be made.
+
+   At any point after the two-week period, the Robotics-Draft may be
+   proposed for elevation to RRFC status. This process is begun by a
+   proposal to the Voting Managers.
+
+4.3  Voting
+
+   RRFCs are published by community agreement through a voting process.
+   This process is managed by the Voting Managers. Their responsibility
+   is to ensure the smooth and timely occurrence of voting. The voting
+   process is as follows:
+
+   1.  A proposal is made to the Voting Managers that a Robotics-Draft
+       be elevated to RRFC status and so published. This proposal must
+       be made on the open mailing list.
+   2.  The Voting Managers may choose to reject the vote. They must
+       provide an explanation of their reasons for rejection, and the
+       proposer may appeal. All rejections and appeals must be made on
+       the open mailing list.
+   3.  If the Voting Managers choose to go ahead with the vote, they
+       must make a last-call on the mailing list for final discussions.
+       The last-call must be made a minimum of two weeks before voting
+       begins.
+   4.  A reasonable time after the last-call, voting begins with an
+       announcement by the Voting Managers on the RRFC-vote mailing
+       list, containing details of the purpose of the vote and the time
+       limit. All votes should be placed on this mailing list as replies
+       to this message. Only one vote is allowed per person. The vote
+       format is as follows:
+
+         +1
+         +0
+         -0
+         -1
+
+       The meanings of which are:
+
+         +1 Vote for publication
+         +0 Don't care if published
+         -0 Don't care if not published
+         -1 Vote for rejection
+
+       Voting must remain open for a minimum of two weeks.
+   5.  Once voting is complete, the Voting Managers tally the votes and
+       announce the result on the RRFC-vote mailing list.
+   6.  If the vote passes, the Voting Managers request that the RRFC
+       Editor publish the document as an RRFC, proving the exact file
+       name of the relevant Robotics-Draft. The RRFC Editor will assign
+       an RRFC number and make an announcement of publication. The
+       document will be removed from the Robotics-Draft directory.
+   7.  If the vote fails, it may remain a Robotics-Draft until the end
+       of its six month time limit.
+
+4.4  Best Current Practice Process
+
+   Documents proposed as Best Current Practice go through a similar
+   process to publishing an RRFC.
+
+   1. A new Robotics-Draft is submitted containing the text of the
+      proposed BCP, which should generally be identical (excluding minor
+      changes) to the RRCP being proposed for elevation.
+   2. A proposal is made to elevate an RRFC to BCP status. This proposal
+      is made to the Voting Managers on the mailing list. The proposal
+      must include a diff of any changes made from the RRFC to the
+      Robotics-Draft proposed for elevation.
+   3. The Voting Managers either accept or reject the proposal. If
+      accepting, they must then make a Last-Call announcing the schedule
+      for voting. A minimum of four weeks must elapse between acceptance
+      of the proposal and the start of voting.
+   4. If the Voting Managers reject the proposal, they must provide an
+      explanation on the open mailing list.
+   5. Voting takes place using the process given in Section 4.3.
+   6. If the vote is successful, the Robotics-Draft is published as an
+      RRFC with the addition of a BCP number assigned by the RRFC
+      Editor. It is also added to the BCP index.
+   7. If the vote fails, the Robotics-Draft is immediately removed from
+      the Robotics-Draft directory. If the proposer wishes to resubmit
+      (for example, after modifying the proposal), they must also
+      resubmit the Robotics-Draft (including any modifications).
+
+4.5  Conflict Resolution and Appeals
+
+   Disputes are possible during any stage of the publication process. As
+   much as possible, the process is designed to allow compromises and
+   achieve consensus. However, there are times when even the most
+   reasonable and knowledgeable people are unable to agree. Such
+   conflicts must be resolved in open discussion on the RRFC mailing
+   lists.
+
+   There is no elected board in the RETF, so it is the responsibility of
+   the community to resolve differences. If necessary, a voting process
+   may be utilised under the management of the Voting Managers to
+   resolve differences.
+
+
+5.  External Standards and Specifications
+
+   Many standards groups create and publish standards and
+   specifications, and many of these have begun efforts to standardise
+   areas in robotics. When such standards exist, they can be brought
+   into the RRFC process in the form of Informational RRFCs.
+
+
+6.  Notices and Record Keeping
+
+   Notifications must be made for various events:
+
+6.1  Submission of a new Robotics-Draft
+
+   The submitter should make an announcement to RRFC-announce in order
+   to begin discussion.
+
+6.2  Proposed elevation of an R-D to RRFC or RRFC to BCP
+
+   The Voting Managers must announce a Last-Call detailing the voting
+   schedule to RRFC-announce.
+
+6.3  Opening of voting
+
+   The Voting Managers must announce the opening of voting to RRFC-vote.
+   This announcement must contain the voting schedule and details of the
+   vote topic.
+
+6.4  Close of voting
+
+   The Voting Managers must announce the close of voting to RRFC-vote.
+
+6.5  Outcome of voting
+
+   The Voting Managers must announce the results of a vote to RRFC-vote.
+
+6.6  Publication of an RRFC
+
+   The RRFC Editor must announce the publication of new RRFCs to
+   RRFC-announce.
+
+7.  Varying the Process
+
+   This document and other documents setting out the processes of
+   publishing RRFCs are themselves RRFCs, and so are subject to the same
+   rules for modification. This document itself is likely to be replaced
+   in time, as the processes change based on experience. Updating this
+   document follows the same procedure as updating any other BCP.
+
+
+8.  INTELLECTUAL PROPERTY RIGHTS
+
+   Um? Need to think about this stuff carefully.
+
+8.1  General Policy
+
+   In all matters of intellectual property rights and procedures, the
+   intention is to benefit the Robotics Community and the public at
+   large, while respecting the legitimate rights of others.
+
+8.2  Confidentiality Obligations
+
+   No contribution that is subject to any requirement of confidentiality
+   or any restriction on its dissemination may be considered in any part
+   of the Robotic Request For Comment Publication Process, and there
+   must be no assumption of any confidentiality obligation with respect
+   to any such contribution.
+
+8.3.  Rights and Permissions
+
+   In the course of standards work, contributions are received in
+   various forms and from many persons.  To best facilitate the
+   dissemination of these contributions, it is necessary to understand
+   any intellectual property rights (IPR) relating to the contributions.
+
+8.3.1.  All Contributions
+
+   By submission of a contribution, each person actually submitting the
+   contribution is deemed to agree to the following terms and conditions
+   on his own behalf, on behalf of the organization (if any) he
+   represents and on behalf of the owners of any propriety rights in the
+   contribution.  Where a submission identifies contributors in
+   addition to the contributor(s) who provide the actual submission, the
+   actual submitter(s) represent that each other named contributor was
+   made aware of and agreed to accept the same terms and conditions on
+   his own behalf, on behalf of any organization he may represent and
+   any known owner of any proprietary rights in the contribution.
+
+   l. Some works (e.g. works of the U.S. Government) are not subject to
+      copyright.  However, to the extent that the submission is or may
+      be subject to copyright, the contributor, the organization he
+      represents (if any) and the owners of any proprietary rights in
+      the contribution, grant an unlimited perpetual, non-exclusive,
+      royalty-free, world-wide right and license to the ISOC and the
+      IETF under any copyrights in the contribution.  This license
+      includes the right to copy, publish and distribute the
+      contribution in any way, and to prepare derivative works that are
+      based on or incorporate all or part of the contribution, the
+      license to such derivative works to be of the same scope as the
+      license of the original contribution.
+
+   2. The contributor acknowledges that the ISOC and IETF have no duty
+      to publish or otherwise use or disseminate any contribution.
+
+   3. The contributor grants permission to reference the name(s) and
+      address(es) of the contributor(s) and of the organization(s) he
+      represents (if any).
+
+   4. The contributor represents that contribution properly acknowledge
+      major contributors.
+
+   5. The contribuitor, the organization (if any) he represents and the
+      owners of any proprietary rights in the contribution, agree that
+      no information in the contribution is confidential and that the
+      ISOC and its affiliated organizations may freely disclose any
+      information in the contribution.
+
+   6. The contributor represents that he has disclosed the existence of
+      any proprietary or intellectual property rights in the
+      contribution that are reasonably and personally known to the
+      contributor.  The contributor does not represent that he
+      personally knows of all potentially pertinent proprietary and
+      intellectual property rights owned or claimed by the organization
+      he represents (if any) or third parties.
+
+   7. The contributor represents that there are no limits to the
+      contributor's ability to make the grants acknowledgments and
+      agreements above that are reasonably and personally known to the
+      contributor.
+
+      By ratifying this description of the IETF process the Internet
+      Society warrants that it will not inhibit the traditional open and
+      free access to IETF documents for which license and right have
+      been assigned according to the procedures set forth in this
+      section, including Internet-Drafts and RFCs. This warrant is
+      perpetual and will not be revoked by the Internet Society or its
+      successors or assigns.
+
+8.3.2. Standards Track Documents
+
+   (A)  Where any patents, patent applications, or other proprietary
+      rights are known, or claimed, with respect to any specification on
+      the standards track, and brought to the attention of the IESG, the
+      IESG shall not advance the specification without including in the
+      document a note indicating the existence of such rights, or
+      claimed rights.  Where implementations are required before
+      advancement of a specification, only implementations that have, by
+      statement of the implementors, taken adequate steps to comply with
+      any such rights, or claimed rights, shall be considered for the
+      purpose of showing the adequacy of the specification.
+   (B)  The IESG disclaims any responsibility for identifying the
+      existence of or for evaluating the applicability of any claimed
+      copyrights, patents, patent applications, or other rights in the
+      fulfilling of the its obligations under (A), and will take no
+      position on the validity or scope of any such rights.
+   (C)  Where the IESG knows of rights, or claimed rights under (A), the
+      IETF Executive Director shall attempt to obtain from the claimant
+      of such rights, a written assurance that upon approval by the IESG
+      of the relevant Internet standards track specification(s), any
+      party will be able to obtain the right to implement, use and
+      distribute the technology or works when implementing, using or
+      distributing technology based upon the specific specification(s)
+      under openly specified, reasonable, non-discriminatory terms.
+      The Working Group proposing the use of the technology with respect
+      to which the proprietary rights are claimed may assist the IETF
+      Executive Director in this effort.  The results of this procedure
+      shall not affect advancement of a specification along the
+      standards track, except that the IESG may defer approval where a
+      delay may facilitate the obtaining of such assurances.  The
+      results will, however, be recorded by the IETF Executive Director,
+      and made available.  The IESG may also direct that a summary of
+      the results be included in any RFC published containing the
+      specification.
+
+8.3.3  Determination of Reasonable and Non-discriminatory Terms
+
+   The IESG will not make any explicit determination that the assurance
+   of reasonable and non-discriminatory terms for the use of a
+   technology has been fulfilled in practice.  It will instead use the
+   normal requirements for the advancement of Internet Standards to
+   verify that the terms for use are reasonable.  If the two unrelated
+   implementations of the specification that are required to advance
+   from Proposed Standard to Draft Standard have been produced by
+   different organizations or individuals or if the "significant
+   implementation and successful operational experience" required to
+   advance from Draft Standard to Standard has been achieved the
+   assumption is that the terms must be reasonable and to some degree,
+   non-discriminatory.  This assumption may be challenged during the
+   Last-Call period.
+
+8.4.  Notices
+
+   (A)  Standards track documents shall include the following notice:
+
+         "The IETF takes no position regarding the validity or scope of
+         any intellectual property or other rights that might be claimed
+         to  pertain to the implementation or use of the technology
+         described in this document or the extent to which any license
+         under such rights might or might not be available; neither does
+         it represent that it has made any effort to identify any such
+         rights.  Information on the IETF's procedures with respect to
+         rights in standards-track and standards-related documentation
+         can be found in BCP-11.  Copies of claims of rights made
+         available for publication and any assurances of licenses to
+         be made available, or the result of an attempt made
+         to obtain a general license or permission for the use of such
+         proprietary rights by implementors or users of this
+         specification can be obtained from the IETF Secretariat."
+
+   (B)  The IETF encourages all interested parties to bring to its
+      attention, at the earliest possible time, the existence of any
+      intellectual property rights pertaining to Internet Standards.
+      For this purpose, each standards document shall include the
+      following invitation:
+
+         "The IETF invites any interested party to bring to its
+         attention any copyrights, patents or patent applications, or
+         other proprietary rights which may cover technology that may be
+         required to practice this standard.  Please address the
+         information to the IETF Executive Director."
+
+   (C)  The following copyright notice and disclaimer shall be included
+      in all ISOC standards-related documentation:
+
+         "Copyright (C) The Internet Society (date). All Rights
+         Reserved.
+
+         This document and translations of it may be copied and
+         furnished to others, and derivative works that comment on or
+         otherwise explain it or assist in its implmentation may be
+         prepared, copied, published and distributed, in whole or in
+         part, without restriction of any kind, provided that the above
+         copyright notice and this paragraph are included on all such
+         copies and derivative works.  However, this document itself may
+         not be modified in any way, such as by removing the copyright
+         notice or references to the Internet Society or other Internet
+         organizations, except as needed for the  purpose of developing
+         Internet standards in which case the procedures for copyrights
+         defined in the Internet Standards process must be followed, or
+         as required to translate it into languages other than English.
+
+         The limited permissions granted above are perpetual and will
+         not be revoked by the Internet Society or its successors or
+         assigns.
+         This document and the information contained herein is provided
+         on an "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET
+         ENGINEERING TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE
+         OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY
+         IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+         PARTICULAR PURPOSE."
+
+   (D)  Where the IESG is aware at the time of publication of
+      proprietary rights claimed with respect to a standards track
+      document, or the technology described or referenced therein, such
+      document shall contain the following notice:
+
+         "The IETF has been notified of intellectual property rights
+         claimed in regard to some or all of the specification contained
+         in this document.  For more information consult the online list
+         of claimed rights."
+
+9.  Acknowledgments
+
+   Parts of this document and the processes it describes are based on
+   RFC 2026 from the IETF [2].
+
+   The idea to create such a process for robotics stems from an email
+   from Ingo Lütkebohle.
+
+
+10.  Security Considerations
+
+   Security issues are not discussed in this memo.
+
+
+11.  REFERENCES
+
+   [1]  Biggs, G., "Instructions to RRFC Authors", RRFC 2, October 2010.
+
+   [2]  Bradner, S., "The Internet Standards Process -- Revision 3",
+        October 1996.
+
+12. Definitions of Terms
+
+   Voting Managers - A group of people responsible for directing the
+      voting processes.
+   RRFC Editor - The person responsible for assigning RRFC numbers, BCP
+      numbers, and publishing RRFCs.
+   Last-Call - A public comment period used to gage the level of
+      consensus about the reasonableness of a proposed publication
+      action (see Section 4).
+
+13. AUTHOR'S ADDRESS
+
+   Geoffrey Biggs
+   Intelligent Systems Research Institute
+   Central 2, 1-1-1, Umezono
+   Tsukuba
+   Ibaraki 305-8568
+   Japan
+
+   Phone: +81 29-861-5984
+   Fax:   +81 29-861-5987
+   EMail: geoffrey.biggs@aist.go.jp
+
+14.  Full Copyright Statement
+
+   <Deal with this - having based ours heavily on theirs, do we need
+   their copyright as well?>
+
+   Copyright (C) The Internet Society (1997).  All Rights Reserved.
+
+   This document and translations of it may be copied and furnished to
+   others, and derivative works that comment on or otherwise explain it
+   or assist in its implmentation may be prepared, copied, published and
+   distributed, in whole or in part, without restriction of any kind,
+   provided that the above copyright notice and this paragraph are
+   included on all such copies and derivative works.  However, this
+   document itself may not be modified in any way, such as by removing
+   the copyright notice or references to the Internet Society or other
+   Internet organizations, except as needed for the purpose of
+   developing Internet standards in which case the procedures for
+   copyrights defined in the Internet Standards process must be
+   followed, or as required to translate it into languages other than
+   English.
+
+   The limited permissions granted above are perpetual and will not be
+   revoked by the Internet Society or its successors or assigns.
+
+   This document and the information contained herein is provided on an
+   "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING
+   TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+   BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION
+   HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF
+   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE."
+
+APPENDIX A: Glossary of Acronyms
+
+   RRFC:     Robotic Request For Comment
+   BCP:      Best Current Practice
+   VM:       Voting Managers
+
